@@ -1,0 +1,89 @@
+.menu-item {
+  cursor: pointer;
+  font-weight: 600;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  white-space: nowrap;
+  gap: 0.625rem;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+  color: #475569;
+}
+.dark .menu-item {
+  color: #94a3b8;
+}
+
+.menu-item.menu-item-hoverable:hover {
+  color: #0f172a;
+  background-color: #f1f5f9;
+}
+.dark .menu-item.menu-item-hoverable:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.menu-item.menu-item-active {
+  color: var(--primary);
+  background-color: var(--primary-subtle);
+  font-weight: 700;
+}
+.menu-item.menu-item-active:hover {
+  color: var(--primary);
+  background-color: var(--primary-subtle);
+}
+.dark .menu-item.menu-item-active {
+  color: #6FAEDC;
+  background-color: rgba(59, 130, 246, 0.15);
+}
+.dark .menu-item.menu-item-active:hover {
+  color: #93c5fd;
+  background-color: rgba(59, 130, 246, 0.22);
+}
+
+.menu-item.menu-item-disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+}
+
+.menu-collapse-item {
+  cursor: pointer;
+  user-select: none;
+  font-weight: 600;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  height: 3rem;
+  border-radius: 0.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  color: #475569;
+}
+.menu-collapse-item:hover {
+  color: #0f172a;
+  background-color: #f1f5f9;
+}
+.dark .menu-collapse-item {
+  color: #94a3b8;
+}
+.dark .menu-collapse-item:hover {
+  color: #f8fafc;
+  background-color: rgba(255, 255, 255, 0.06);
+}
+
+.menu-item-divider {
+  border-bottom: 1px solid #e2e8f0;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.dark .menu-item-divider {
+  border-bottom-color: #334155;
+}
+

@@ -1,0 +1,84 @@
+.switcher {
+  min-width: 2.75rem;
+  height: 1.5rem;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  border-radius: 1.5rem;
+  background-color: #e5e7eb;
+  cursor: pointer;
+  transition-property: background-color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+.dark .switcher {
+  background-color: #4b5563;
+}
+
+.switcher input {
+  display: none;
+}
+
+.switcher.switcher-checked {
+  background-color: currentColor;
+}
+
+.switcher.switcher-checked .switcher-toggle {
+  left: calc(100% - 1.25rem - 0.125rem);
+}
+
+.switcher.switcher-checked .switcher-toggle-loading {
+  left: calc(100% - 1.25rem - 0.125rem);
+}
+
+.switcher.switcher-checked .switcher-content {
+  margin: 0 1.65rem 0 0.45rem;
+}
+
+.switcher.switcher-disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  user-select: none;
+}
+
+.switcher-toggle {
+  position: absolute;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  left: 0.125rem;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.switcher-toggle:before {
+  content: "";
+  position: absolute;
+  background-color: #fff;
+  border-radius: 0.75rem;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.switcher-content {
+  margin: 0 0.45rem 0 1.65rem;
+  color: #fff;
+  transition-property: color;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.switcher-toggle-loading {
+  width: 1.25rem;
+  height: 1.25rem;
+  left: 0.125rem;
+  top: 0.125rem;
+  position: absolute;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}

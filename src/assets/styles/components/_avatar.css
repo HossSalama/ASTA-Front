@@ -1,0 +1,114 @@
+/* Manual CSS rewrite to replace @apply with native properties because Tailwind v4 @apply is failing on unknown utilities in components */
+
+.avatar {
+  display: inline-block;
+  position: relative;
+  color: var(--gray-100);
+  background-color: var(--gray-400);
+}
+.dark .avatar {
+  background-color: var(--gray-600);
+}
+
+.avatar-sm {
+  width: 2rem;
+  height: 2rem;
+  line-height: 2rem;
+}
+
+.avatar-md {
+  width: 2.5rem;
+  height: 2.5rem;
+  line-height: 2.5rem;
+}
+
+.avatar-lg {
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+}
+
+.avatar-round {
+  border-radius: 0.5rem;
+}
+
+.avatar-square {
+  border-radius: 0;
+}
+
+.avatar-circle {
+  border-radius: 9999px;
+}
+
+.avatar-img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.avatar-string {
+  position: absolute;
+  transform-origin: center;
+  left: 50%;
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  transform: translateX(-50%);
+}
+
+.avatar-inner-sm {
+  height: 2rem;
+}
+
+.avatar-inner-md {
+  height: 2.5rem;
+}
+
+.avatar-inner-lg {
+  height: 3rem;
+}
+
+.avatar-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.avatar-icon-sm {
+  font-size: 1.125rem;
+}
+
+.avatar-icon-md {
+  font-size: 1.25rem;
+}
+
+.avatar-icon-lg {
+  font-size: 1.5rem;
+}
+
+.avatar-group {
+  display: inline-flex;
+}
+
+.avatar-group-chained > .avatar,
+.avatar-group-chained > .tooltip-wrapper {
+  margin-left: -0.5rem;
+}
+
+[dir="rtl"] .avatar-group-chained > .avatar,
+[dir="rtl"] .avatar-group-chained > .tooltip-wrapper {
+  margin-right: -0.5rem;
+  margin-left: 0;
+}
+
+.avatar-group-chained > .avatar:first-child,
+.avatar-group-chained > .tooltip-wrapper:first-child {
+  margin-left: 0;
+}
+
+[dir="rtl"] .avatar-group-chained > .avatar:first-child,
+[dir="rtl"] .avatar-group-chained > .tooltip-wrapper:first-child {
+  margin-right: 0;
+}

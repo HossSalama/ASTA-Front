@@ -1,0 +1,37 @@
+.form-item {
+  margin-bottom: 1.75rem;
+  position: relative;
+}
+
+.form-item.horizontal {
+  display: flex;
+  flex: 1 1 auto;
+}
+
+.form-item.vertical {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #334155;
+}
+.dark .form-label {
+  color: #e2e8f0;
+}
+
+.form-label.invalid {
+  color: #ef4444;
+}
+.dark .form-label.invalid {
+  color: #f87171;
+}
+
+.form-explain {
+  color: #ef4444;
+  position: absolute;
+  font-weight: 600;
+}

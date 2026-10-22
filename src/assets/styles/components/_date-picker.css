@@ -1,0 +1,79 @@
+.date-picker {
+  z-index: 40;
+  max-width: 20rem;
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 0.75rem;
+  padding: 1rem;
+}
+.dark .date-picker {
+  background-color: #1f2937;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+}
+
+.date-picker-panel {
+  border-radius: 0.5rem;
+}
+
+.date-picker-header-label {
+  cursor: pointer;
+  margin-left: 0.125rem;
+  margin-right: 0.125rem;
+  user-select: none;
+  color: #111827;
+}
+.dark .date-picker-header-label {
+  color: #f3f4f6;
+}
+
+.picker-panel {
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+}
+.dark .picker-panel {
+  background-color: #111827;
+  border: 2px solid #374151;
+}
+
+.picker-header-arrow {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  font-size: 1.125rem;
+  user-select: none;
+  height: 2.5rem;
+}
+[dir="rtl"] .picker-header-arrow {
+  transform: rotate(180deg);
+}
+
+.picker-direction-button {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  border-radius: 9999px;
+  height: 2.5rem;
+  width: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-property: all;
+}
+.picker-direction-button:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+.dark .picker-direction-button:hover {
+  background-color: #374151;
+  color: #f3f4f6;
+}
+
+.date-picker-cell {
+  text-align: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  padding: 0;
+}

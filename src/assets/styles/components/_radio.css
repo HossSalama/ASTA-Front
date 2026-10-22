@@ -1,0 +1,12 @@
+.radio {
+  border-radius: 9999px;
+  border: 1px solid #d1d5db;
+  cursor: pointer;
+}
+.dark .radio {
+  border-color: #4b5563;
+}
+.radio:checked {
+  background-color: currentColor;
+  border-color: currentColor;
+}

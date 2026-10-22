@@ -1,0 +1,26 @@
+.notification {
+  background-color: #fff;
+  border-radius: 0.75rem;
+  margin-bottom: 0.75rem;
+  position: relative;
+  border: 1px solid #e5e7eb;
+  font-weight: 600;
+}
+.dark .notification {
+  background-color: #374151;
+  border-color: transparent;
+}
+
+.notification-content {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+}
+
+.notification-title {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #1f2937;
+}
+.dark .notification-title {
+  color: #fff;
+}

@@ -1,0 +1,63 @@
+.fc {
+  height: 100%;
+}
+
+.fc-view-harness {
+  height: 100%;
+}
+
+.fc-theme-standard td, 
+.fc-theme-standard th {
+  border: 1px solid #e5e7eb;
+}
+.dark .fc-theme-standard td, 
+.dark .fc-theme-standard th {
+  border-color: #4b5563;
+}
+
+.fc-theme-standard .fc-scrollgrid {
+  border: 0;
+}
+
+.fc-daygrid-day-number {
+  font-weight: 600;
+  height: 30px;
+  width: 30px;
+  border-radius: 9999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #111827;
+}
+.dark .fc-daygrid-day-number {
+  color: #f3f4f6;
+}
+
+.fc-button {
+  border-radius: 0.75rem !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  height: 3rem !important;
+  font-weight: 700 !important;
+  background-color: #fff !important;
+  border: 1px solid #d1d5db !important;
+  color: #4b5563 !important;
+}
+.dark .fc-button {
+  background-color: #374151 !important;
+  border-color: #374151 !important;
+  color: #f3f4f6 !important;
+}
+
+.fc-button:hover {
+  background-color: #f9fafb !important;
+}
+.dark .fc-button:hover {
+  background-color: #4b5563 !important;
+}
+
+.fc-button-active {
+  background-color: var(--primary) !important;
+  color: #fff !important;
+  border-color: #d1d5db !important;
+}

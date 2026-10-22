@@ -1,0 +1,36 @@
+.menu-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+  color: #64748b;
+}
+
+.dark .menu-title {
+  color: #94a3b8;
+}
+
+.menu-title-light {
+  color: #64748b;
+}
+
+.menu-title-dark {
+  color: #94a3b8;
+}
+
+.menu-light {
+  background-color: #fff;
+}
+
+.menu-dark {
+  background-color: #111827;
+}
+
+.menu-transparent {
+  background-color: transparent;
+}
+

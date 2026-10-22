@@ -1,0 +1,8 @@
+.tooltip {
+  z-index: 50;
+  max-width: 250px;
+  color: #fff;
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  position: relative;
+}

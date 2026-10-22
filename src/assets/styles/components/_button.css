@@ -1,0 +1,15 @@
+.button {
+  font-weight: 700;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  white-space: nowrap;
+}
+
+.button-press-feedback {
+  transition-property: transform;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+.button-press-feedback:active {
+  transform: scale(0.98);
+}

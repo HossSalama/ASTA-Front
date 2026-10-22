@@ -1,0 +1,22 @@
+.time-input-field {
+  width: 1.5rem;
+  text-align: center;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  background-color: transparent;
+}
+
+.time-input-wrapper {
+  display: flex;
+  align-items: center;
+  height: 100%;
+}
+[dir="rtl"] .time-input-wrapper {
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+}
+
+.time-input-separator {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}

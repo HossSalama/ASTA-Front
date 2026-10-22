@@ -1,0 +1,15 @@
+.alert {
+  padding: 1rem;
+  position: relative;
+  display: flex;
+}
+
+.alert-close {
+  padding: 0.25rem;
+  cursor: pointer;
+  margin-left: auto;
+}
+[dir="rtl"] .alert-close {
+  margin-right: auto;
+  margin-left: 0;
+}

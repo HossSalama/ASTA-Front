@@ -1,0 +1,25 @@
+.close-button[type='button'],
+.close-button[type='reset'] {
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  font-size: 1.125rem;
+  border-radius: 9999px;
+  padding: 0.375rem;
+  background-color: #f3f4f6;
+  color: #6b7280;
+  transition-property: all;
+}
+.close-button[type='button']:hover,
+.close-button[type='reset']:hover {
+  background-color: #e5e7eb;
+  color: #1f2937;
+}
+.dark .close-button[type='button'],
+.dark .close-button[type='reset'] {
+  background-color: #374151;
+}
+.dark .close-button[type='button']:hover,
+.dark .close-button[type='reset']:hover {
+  background-color: #4b5563;
+  color: #f3f4f6;
+}

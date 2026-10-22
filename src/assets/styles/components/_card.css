@@ -1,0 +1,38 @@
+.card {
+  background-color: #ffffff;
+  border-radius: 1rem;
+}
+.dark .card {
+  background-color: #1e293b;
+}
+
+.card-border {
+  border: 1px solid #e2e8f0;
+}
+.dark .card-border {
+  border-color: #334155;
+}
+
+.card-header {
+  border-bottom: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.dark .card-header {
+  border-color: #334155;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.card-footer {
+  border-top: 1px solid #e2e8f0;
+  padding: 1.25rem;
+}
+.dark .card-footer {
+  border-color: #334155;
+}
+

@@ -1,0 +1,19 @@
+.skeleton {
+  background-color: #e5e7eb;
+  display: flex;
+}
+.dark .skeleton {
+  background-color: #4b5563;
+}
+
+.skeleton-circle {
+  border-radius: 9999px;
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.skeleton-block {
+  border-radius: 0.25rem;
+  height: 0.625rem;
+  width: 100%;
+}

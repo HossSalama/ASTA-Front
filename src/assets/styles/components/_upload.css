@@ -1,0 +1,52 @@
+.upload {
+  position: relative;
+  display: inline-block;
+}
+
+.upload.disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.upload-input {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.upload-draggable {
+  min-height: 7rem;
+  border: 2px dashed #d1d5db;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.dark .upload-draggable {
+  border-color: #4b5563;
+}
+
+.upload-file-info {
+  min-height: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 0.75rem;
+}
+[dir="rtl"] .upload-file-info {
+  margin-right: 0.75rem;
+  margin-left: 0;
+}
+
+.upload-file {
+  display: flex;
+  align-items: center;
+  background-color: #f3f4f6;
+  border-radius: 0.5rem;
+  margin-bottom: 0.5rem;
+  justify-content: space-between;
+}
+.dark .upload-file {
+  background-color: #374151;
+}

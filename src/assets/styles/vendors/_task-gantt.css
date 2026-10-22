@@ -1,0 +1,53 @@
+.gantt-container {
+  display: table;
+  border-bottom: 1px solid #e5e7eb;
+  border-top: 1px solid #e5e7eb;
+  border-left: 1px solid #e5e7eb;
+}
+.dark .gantt-container {
+  border-color: #374151;
+}
+
+.gantt-row {
+  background-color: rgba(243, 244, 246, 0.5);
+}
+.dark .gantt-row {
+  background-color: rgba(55, 65, 81, 0.4);
+}
+
+.gantt-task-content {
+  display: flex;
+  align-items: center;
+}
+
+.gantt-tooltip {
+  background-color: #fff;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.dark .gantt-tooltip {
+  background-color: #1f2937;
+}
+
+.gantt-grid-header {
+  fill: transparent;
+}
+
+.gantt-grid-line {
+  stroke: #e5e7eb;
+}
+.dark .gantt-grid-line {
+  stroke: #374151;
+}
+
+.gantt-text {
+  font-size: 0.875rem;
+  font-weight: 600;
+  fill: #6b7280;
+  user-select: none;
+  pointer-events: none;
+}
+.dark .gantt-text {
+  fill: #9ca3af;
+}

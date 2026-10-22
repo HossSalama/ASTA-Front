@@ -1,0 +1,50 @@
+.side-nav {
+  flex-direction: column;
+  flex: 1 1 auto;
+  flex-shrink: 0;
+  z-index: 20;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.side-nav-content {
+  height: calc(100vh - 4rem);
+  overflow-y: auto;
+}
+
+.side-nav-light {
+  background-color: #ffffff;
+  border-right: 1px solid #e2e8f0;
+}
+[dir="rtl"] .side-nav-light {
+  border-left: 1px solid #e2e8f0;
+  border-right: 0;
+}
+
+.side-nav-dark {
+  background-color: #111827;
+  border-right: 1px solid #1f2937;
+}
+[dir="rtl"] .side-nav-dark {
+  border-left: 1px solid #1f2937;
+  border-right: 0;
+}
+
+.side-nav-bg {
+  border-right-width: 1px;
+  background-color: #ffffff;
+  border-color: #e2e8f0;
+}
+[dir="rtl"] .side-nav-bg {
+  border-left-width: 1px;
+  border-right-width: 0;
+}
+.dark .side-nav-bg {
+  background-color: #111827;
+  border-color: #1f2937;
+}
+

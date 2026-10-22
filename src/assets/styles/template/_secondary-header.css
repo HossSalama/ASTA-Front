@@ -1,0 +1,9 @@
+.secondary-header-light {
+  background-color: #fff;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.secondary-header-dark {
+  background-color: #1f2937;
+  border-bottom: 1px solid #374151;
+}

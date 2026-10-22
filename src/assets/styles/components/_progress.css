@@ -1,0 +1,41 @@
+.progress {
+  display: inline-block;
+}
+
+.progress.circle {
+  position: relative;
+  width: 100%;
+}
+
+.progress.line {
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.progress-bg {
+  border-radius: 9999px;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 200ms;
+}
+
+.progress-info.line {
+  margin-left: 0.5rem;
+}
+[dir="rtl"] .progress-info.line {
+  margin-right: 0.5rem;
+  margin-left: 0;
+}
+
+.progress-inner {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  border-radius: 9999px;
+  background-color: #f3f4f6;
+}
+.dark .progress-inner {
+  background-color: #4b5563;
+}

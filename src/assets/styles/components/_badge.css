@@ -1,0 +1,15 @@
+.badge-inner {
+  position: absolute;
+  z-index: 10;
+  top: 0;
+  transform: translate(50%, -50%);
+}
+[dir="rtl"] .badge-inner {
+  transform: translate(-50%, -50%);
+}
+[dir="ltr"] .badge-inner {
+  right: 0;
+}
+[dir="rtl"] .badge-inner {
+  left: 0;
+}

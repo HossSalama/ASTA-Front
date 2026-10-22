@@ -1,0 +1,29 @@
+.segment {
+  display: inline-flex;
+  border-radius: 0.75rem;
+  padding: 0.25rem;
+}
+
+.segment-item {
+  font-weight: 600;
+  outline: 2px solid transparent;
+  outline-offset: 2px;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 0.75rem;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 100ms;
+}
+
+.segment-item.segment-item-active {
+  background-color: #fff;
+  color: #1f2937;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.dark .segment-item.segment-item-active {
+  background-color: #1f2937;
+  color: #f3f4f6;
+}
